@@ -33,10 +33,9 @@ document.addEventListener('DOMContentLoaded', () => {
     navToggle.addEventListener('click', () => {
       const open = navLinks.style.display === 'flex';
       navLinks.style.display = open ? 'none' : 'flex';
-      navLinks.style.cssText += `
-        ${open ? '' : 'position:fixed;top:70px;left:0;width:100%;flex-direction:column;
-        background:rgba(6,6,7,0.96);padding:24px 6vw;gap:18px;backdrop-filter:blur(14px);'}
-      `;
+      if (!open) {
+        navLinks.style.cssText += 'position:fixed;top:70px;left:0;width:100%;flex-direction:column;background:rgba(6,6,7,0.96);padding:24px 6vw;gap:18px;backdrop-filter:blur(14px);display:flex;';
+      }
     });
     document.querySelectorAll('.nav-links a').forEach(a => {
       a.addEventListener('click', () => {
