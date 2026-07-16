@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lucky Diwakar | Backend Developer &amp; AI/ML Enthusiast</title>
+<meta name="description" content="Portfolio of Lucky Diwakar — Backend Developer and AI/ML Enthusiast.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="particles"></canvas>
+<div class="mouse-glow" id="mouseGlow"></div>
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<div id="loader">
+  <div class="loader-text">LUCKY<span>_</span>DIWAKAR</div>
+  <div class="loader-bar"><span></span></div>
+</div>
+
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#hero" class="logo">LD<span class="dot">.</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#stats">Stats</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta">Let's Talk</a>
+    <button id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <p class="eyebrow reveal">// backend developer · ai / ml enthusiast</p>
+    <h1 class="reveal">
+      Hi, I'm <span class="glow-text">Lucky Diwakar</span>
+    </h1>
+    <h2 class="typewriter-line reveal">
+      <span id="typewriter"></span><span class="cursor">|</span>
+    </h2>
+    <p class="hero-desc reveal">
+      I build reliable backend systems and explore machine learning —
+      turning logic into products that actually ship.
+    </p>
+    <div class="hero-actions reveal">
+      <a href="#projects" class="btn btn-primary">View Projects</a>
+      <a href="#contact" class="btn btn-outline">Get In Touch</a>
+    </div>
+    <div class="hero-social reveal">
+      <a href="https://github.com/lucky947-git" target="_blank" rel="noopener" aria-label="GitHub">
+        <svg viewBox="0 0 24 24"><path d="M12 .5C5.7.5.7 5.6.7 12c0 5.1 3.3 9.4 7.9 11 .6.1.8-.3.8-.6v-2.2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.7.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6a11.5 11.5 0 0 0 7.9-11C23.3 5.6 18.3.5 12 .5Z"/></svg>
+      </a>
+      <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24"><path d="M20.4 20.4h-3.5v-5.6c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9v5.7H9.3V9h3.4v1.6h.1c.5-.9 1.6-1.9 3.4-1.9 3.6 0 4.2 2.4 4.2 5.5v6.2ZM5.3 7.4A2 2 0 1 1 5.3 3.4a2 2 0 0 1 0 4ZM7.1 20.4H3.5V9h3.6v11.4Z"/></svg>
+      </a>
+      <a href="mailto:lucky.diwakar@example.com" aria-label="Email">
+        <svg viewBox="0 0 24 24"><path d="M2 4h20v16H2V4Zm2 2v.4l8 6.2 8-6.2V6H4Zm16 2.6-7.4 5.7a1 1 0 0 1-1.2 0L4 8.6V18h16V8.6Z"/></svg>
+      </a>
+    </div>
+  </div>
+  <a href="#about" class="scroll-hint"><span>Scroll</span><i></i></a>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-head reveal">
+    <span class="tag">01 / About</span>
+    <h2>Who I Am</h2>
+  </div>
+  <div class="about-grid">
+    <div class="about-card glass reveal">
+      <p>
+        I'm a backend-focused developer who enjoys the invisible half of the internet —
+        the APIs, databases and pipelines that make products actually work.
+        Alongside backend engineering, I'm deep into <strong>AI/ML</strong>,
+        experimenting with models, data and automation.
+      </p>
+      <p>
+        I like clean architecture, readable code, and systems that don't fall over
+        the moment they meet real traffic. Currently sharpening my skills in
+        Python, FastAPI and applied machine learning.
+      </p>
+      <div class="about-meta">
+        <div><span>Focus</span>Backend Engineering</div>
+        <div><span>Exploring</span>Machine Learning</div>
+        <div><span>Based in</span>India</div>
+      </div>
+    </div>
+    <div class="about-stats reveal">
+      <div class="stat-box glass">
+        <div class="stat-num" data-count="3">0</div>
+        <div class="stat-label">Core Languages</div>
+      </div>
+      <div class="stat-box glass">
+        <div class="stat-num" data-count="7">0</div>
+        <div class="stat-label">Tools &amp; Frameworks</div>
+      </div>
+      <div class="stat-box glass">
+        <div class="stat-num" data-count="100">0</div>
+        <div class="stat-label">% Commitment</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-head reveal">
+    <span class="tag">02 / Skills</span>
+    <h2>What I Work With</h2>
+  </div>
+  <div class="skills-grid">
+    <div class="skill-card glass reveal"><div class="skill-icon">🐍</div><h3>Python</h3><p>Core language for scripting, backend logic &amp; ML.</p></div>
+    <div class="skill-card glass reveal"><div class="skill-icon">⚡</div><h3>FastAPI</h3><p>Building fast, typed, production-ready APIs.</p></div>
+    <div class="skill-card glass reveal"><div class="skill-icon">💻</div><h3>HTML5</h3><p>Semantic, accessible page structure.</p></div>
+    <div class="skill-card glass reveal"><div class="skill-icon">🎨</div><h3>CSS3</h3><p>Modern layouts, animation &amp; responsive design.</p></div>
+    <div class="skill-card glass reveal"><div class="skill-icon">📜</div><h3>JavaScript</h3><p>Interactive, dynamic front-end behaviour.</p></div>
+    <div class="skill-card glass reveal"><div class="skill-icon">🛢</div><h3>SQL</h3><p>Designing &amp; querying relational databases.</p></div>
+    <div class="skill-card glass reveal"><div class="skill-icon">🤖</div><h3>Machine Learning</h3><p>Model building, data prep &amp; experimentation.</p></div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-head reveal">
+    <span class="tag">03 / Projects</span>
+    <h2>Selected Work</h2>
+  </div>
+  <div class="projects-grid">
+    <article class="project-card glass reveal">
+      <div class="project-top">
+        <span class="project-index">01</span>
+        <div class="project-links">
+          <a href="#" aria-label="GitHub repo"><svg viewBox="0 0 24 24"><path d="M12 .5C5.7.5.7 5.6.7 12c0 5.1 3.3 9.4 7.9 11 .6.1.8-.3.8-.6v-2.2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.7.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6a11.5 11.5 0 0 0 7.9-11C23.3 5.6 18.3.5 12 .5Z"/></svg></a>
+        </div>
+      </div>
+      <h3>API Service Backend</h3>
+      <p>A FastAPI-based backend service with authentication, database models and clean REST endpoints.</p>
+      <div class="project-tags"><span>Python</span><span>FastAPI</span><span>SQL</span></div>
+    </article>
+    <article class="project-card glass reveal">
+      <div class="project-top">
+        <span class="project-index">02</span>
+        <div class="project-links">
+          <a href="#" aria-label="GitHub repo"><svg viewBox="0 0 24 24"><path d="M12 .5C5.7.5.7 5.6.7 12c0 5.1 3.3 9.4 7.9 11 .6.1.8-.3.8-.6v-2.2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.7.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6a11.5 11.5 0 0 0 7.9-11C23.3 5.6 18.3.5 12 .5Z"/></svg></a>
+        </div>
+      </div>
+      <h3>ML Data Pipeline</h3>
+      <p>An automated pipeline for cleaning, transforming and feeding data into a trained ML model.</p>
+      <div class="project-tags"><span>Python</span><span>ML</span><span>Automation</span></div>
+    </article>
+    <article class="project-card glass reveal">
+      <div class="project-top">
+        <span class="project-index">03</span>
+        <div class="project-links">
+          <a href="#" aria-label="GitHub repo"><svg viewBox="0 0 24 24"><path d="M12 .5C5.7.5.7 5.6.7 12c0 5.1 3.3 9.4 7.9 11 .6.1.8-.3.8-.6v-2.2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.7.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6a11.5 11.5 0 0 0 7.9-11C23.3 5.6 18.3.5 12 .5Z"/></svg></a>
+        </div>
+      </div>
+      <h3>This Portfolio</h3>
+      <p>A dark, animated developer portfolio built with vanilla HTML, CSS &amp; JavaScript — no frameworks.</p>
+      <div class="project-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+    </article>
+  </div>
+  <p class="projects-note reveal">Replace these cards with your real repositories, links and screenshots any time.</p>
+</section>
+
+<!-- GITHUB STATS -->
+<section id="stats">
+  <div class="section-head reveal">
+    <span class="tag">04 / GitHub</span>
+    <h2>Activity Snapshot</h2>
+  </div>
+  <div class="stats-grid reveal">
+    <img src="https://github-readme-stats.vercel.app/api?username=lucky947-git&show_icons=true&theme=dark&hide_border=true&bg_color=00000000&title_color=e63946&icon_color=e63946&text_color=cfcfcf" alt="GitHub stats for lucky947-git" loading="lazy" onerror="this.style.display='none'">
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=lucky947-git&layout=compact&theme=dark&hide_border=true&bg_color=00000000&title_color=e63946&text_color=cfcfcf" alt="Top languages for lucky947-git" loading="lazy" onerror="this.style.display='none'">
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-card glass reveal">
+    <span class="tag">05 / Contact</span>
+    <h2>Let's Build Something</h2>
+    <p>Have a project, an opportunity, or just want to talk backend &amp; ML? My inbox is open.</p>
+    <div class="contact-links">
+      <a href="mailto:lucky.diwakar@example.com" class="btn btn-primary">Email Me</a>
+      <a href="https://github.com/lucky947-git" target="_blank" rel="noopener" class="btn btn-outline">GitHub</a>
+      <a href="https://linkedin.com" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; <span id="year"></span> Lucky Diwakar. Built with HTML, CSS &amp; JavaScript.</p>
+  <div class="footer-social">
+    <a href="https://github.com/lucky947-git" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+    <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+    <a href="mailto:lucky.diwakar@example.com" aria-label="Email">Email</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
